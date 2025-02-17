@@ -165,7 +165,7 @@ There are three main loops in this page, each nested inside the other: Years, We
                                 {{ $tooltipContent = printf "%s – %s" (dateFormat "Jan 2, 2006" $specDate ) . }}
                             {{ end }}
                             {{ if .thumbnail }}
-                                {{ $tooltipContent = printf "%s<img src='%s' alt='Event thumbnail'>" $tooltipContent .thumbnail }}
+                                {{ $tooltipContent = printf "%s<img src='%s' alt='Event thumbnail'>" $tooltipContent (.thumbnail | relURL) }}
                             {{ end }}
                             {{ $.Store.Set "buttonDataBSTitle" $tooltipContent }}
                             {{ $buttonLabel := .headline }}

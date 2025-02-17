@@ -1,4 +1,4 @@
-baseURL = 'https://dtun.org'
+baseURL = 'https://dtun.org/life-in-weeks'
 languageCode = 'zh-cn'
 title = '周记生涯'
 disableKinds = ["taxonomy", "taxonomy"]

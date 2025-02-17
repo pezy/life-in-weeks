@@ -11,7 +11,7 @@
 "2025-02-16":
   - headline: "📷 我第一次拍照"
     description: "我人生中第一次专业拍照，据说 198 元一张照片，不过爸爸想和我一起再长大一次"
-    thumbnail: "/imgs/pa_and_me.jpeg"
+    thumbnail: "imgs/pa_and_me.jpeg"
     based: "月子中心"
     doing: "I was tiny"
 
