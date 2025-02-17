@@ -159,4 +159,18 @@ a:hover {
 .custom-tooltip {
     --bs-tooltip-bg: var(--highlight-color);
     --bs-tooltip-color: var(--bs-white);
+    --bs-tooltip-max-width: 300px;
+    
+    .tooltip-inner {
+        text-align: left;
+        padding: 10px;
+        
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-top: 8px;
+            border-radius: 4px;
+        }
+    }
 }

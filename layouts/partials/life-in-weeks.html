@@ -160,9 +160,14 @@ There are three main loops in this page, each nested inside the other: Years, We
                             {{ $buttonClass := printf "btn week %s %s text-nowrap text-left" ($.Store.Get "basedClass") ($.Store.Get "doingClass") }}
                             {{ $.Store.Set "buttonClass" $buttonClass }}
                             {{ $.Store.Set "buttonDataDate" $specDate }}
+                            {{ $tooltipContent := "" }}
                             {{ with .description }}
-                                {{ $.Store.Set "buttonDataBSTitle" (printf "%s – %s" (dateFormat "Jan 2, 2006" $specDate ) . ) }}
+                                {{ $tooltipContent = printf "%s – %s" (dateFormat "Jan 2, 2006" $specDate ) . }}
                             {{ end }}
+                            {{ if .thumbnail }}
+                                {{ $tooltipContent = printf "%s<img src='%s' alt='Event thumbnail'>" $tooltipContent .thumbnail }}
+                            {{ end }}
+                            {{ $.Store.Set "buttonDataBSTitle" $tooltipContent }}
                             {{ $buttonLabel := .headline }}
                             {{ $.Store.Set "buttonLabel" $buttonLabel }}
 

@@ -1,9 +1,9 @@
-baseURL = 'https://weeks.ginatrapani.org/'
-languageCode = 'en-us'
-title = 'My Life in Weeks'
+baseURL = 'https://dtun.org'
+languageCode = 'zh-cn'
+title = '周记生涯'
 disableKinds = ["taxonomy", "taxonomy"]
 enableEmoji = true
 
 
 [params]
-author = "Gina Trapani"
+author = "pezy"
